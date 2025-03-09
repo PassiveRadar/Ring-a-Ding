@@ -17,15 +17,12 @@ public class RedstoneServiceBellBlockEntity extends ServiceBellBlockEntity {
     }
 
     public static void tick(Level level, BlockPos pos, BlockState state, RedstoneServiceBellBlockEntity blockEntity) {
-        // Call parent tick method to handle toast counter reset
         ServiceBellBlockEntity.tick(level, pos, state, blockEntity);
 
-        // Handle redstone power updates
         if (blockEntity.needsPowerUpdate && !level.isClientSide) {
             if (blockEntity.powerOffTimer > 0) {
                 blockEntity.powerOffTimer--;
             } else if (state.getValue(RedstoneServiceBellBlock.POWERED)) {
-                // Power off the bell after the timer expires
                 level.setBlock(pos, state.setValue(RedstoneServiceBellBlock.POWERED, false), Block.UPDATE_ALL);
                 blockEntity.needsPowerUpdate = false;
             }
@@ -36,7 +33,6 @@ public class RedstoneServiceBellBlockEntity extends ServiceBellBlockEntity {
     protected void saveAdditional(CompoundTag tag) {
         super.saveAdditional(tag);
 
-        // Save redstone data
         tag.putInt("PowerOffTimer", powerOffTimer);
         tag.putBoolean("NeedsPowerUpdate", needsPowerUpdate);
     }
@@ -45,7 +41,6 @@ public class RedstoneServiceBellBlockEntity extends ServiceBellBlockEntity {
     public void load(CompoundTag tag) {
         super.load(tag);
 
-        // Load redstone data
         if (tag.contains("PowerOffTimer")) {
             powerOffTimer = tag.getInt("PowerOffTimer");
         }
