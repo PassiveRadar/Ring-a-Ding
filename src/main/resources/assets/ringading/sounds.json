@@ -1,0 +1,14 @@
+{
+  "bell_ring": {
+    "subtitle": "ringading.subtitles.bell_ring",
+    "sounds": [
+      "ringading:bell_ring"
+    ]
+  },
+  "weak_bell_ring": {
+    "subtitle": "ringading.subtitles.weak_bell_ring",
+    "sounds": [
+      "ringading:bell_ring_weak"
+    ]
+  }
+} 

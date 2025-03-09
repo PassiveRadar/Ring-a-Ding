@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "ringading:block/service_bell"
+    },
+    "powered=true": {
+      "model": "ringading:block/service_bell"
+    }
+  }
+} 

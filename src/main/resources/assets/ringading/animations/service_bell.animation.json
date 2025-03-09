@@ -1,0 +1,83 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.bell.ring": {
+      "animation_length": 0.25,
+      "override_previous_animation": true,
+      "bones": {
+        "bell": {
+          "rotation": {
+            "0.0417": {
+              "vector": [
+                0,
+                0,
+                0
+              ]
+            },
+            "0.0833": {
+              "vector": [
+                -2,
+                8,
+                0
+              ],
+              "easing": "easeInElastic"
+            },
+            "0.1667": {
+              "vector": [
+                2,
+                -8.5,
+                0
+              ],
+              "easing": "easeInElastic"
+            },
+            "0.2083": {
+              "vector": [
+                0,
+                -1,
+                0
+              ],
+              "easing": "linear"
+            }
+          }
+        },
+        "button": {
+          "position": {
+            "0.0": {
+              "vector": [
+                0,
+                0,
+                0
+              ]
+            },
+            "0.0417": {
+              "vector": [
+                0,
+                -0.25,
+                0
+              ],
+              "easing": "easeInQuad"
+            },
+            "0.0833": {
+              "vector": [
+                0,
+                0.25,
+                0
+              ],
+              "easing": "easeOutQuad"
+            },
+            "0.125": {
+              "vector": [
+                0,
+                0,
+                0
+              ],
+              "easing": "easeInQuad"
+            }
+          }
+        }
+      },
+      "sound_effects": {}
+    }
+  },
+  "geckolib_format_version": 2
+}

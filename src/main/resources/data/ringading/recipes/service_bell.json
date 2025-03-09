@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:bell"
+    },
+    {
+      "item": "minecraft:name_tag"
+    }
+  ],
+  "result": {
+    "item": "ringading:service_bell",
+    "count": 1
+  }
+} 
