@@ -20,7 +20,7 @@ public class RedstoneServiceBellItem extends BlockItem {
     @Override
     public void appendHoverText(ItemStack stack, @Nullable Level level, List<Component> tooltip, TooltipFlag flag) {
         tooltip.add(Component.translatable("item.ringading.redstone_service_bell.tooltip.1")
-                .withStyle(ChatFormatting.RED).withStyle(ChatFormatting.BOLD));
+                .withStyle(ChatFormatting.RED));
         tooltip.add(Component.translatable("item.ringading.service_bell.tooltip.1")
                 .withStyle(ChatFormatting.GRAY));
         tooltip.add(Component.translatable("item.ringading.service_bell.tooltip.2")
